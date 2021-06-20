@@ -23,7 +23,7 @@ export default class Messages extends Component {
       <WrapperContainer
         statusBarColor={colors.black}
         containerStyle={commonStyles.centerInContainer}>
-        <Text style={styles.textStyle}>{strings.COMING_SOON}</Text>
+        <Text style={styles.textStyle}>{strings.MESSAGES}</Text>
       </WrapperContainer>
     );
   }
