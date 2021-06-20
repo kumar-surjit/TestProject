@@ -23,11 +23,17 @@ export default function TabRoutes() {
           tabBarIcon: ({focused, color}) => {
             if (focused)
               return (
-                <TabBarIconComp imgSrc={imagePath.ic_home} imgColor={color} />
+                <TabBarIconComp
+                  imgSrc={imagePath.ic_home}
+                  imgStyle={{tintColor: color}}
+                />
               );
             else
               return (
-                <TabBarIconComp imgSrc={imagePath.ic_home} imgColor={color} />
+                <TabBarIconComp
+                  imgSrc={imagePath.ic_home}
+                  imgStyle={{tintColor: color}}
+                />
               );
           },
           tabBarLabel: strings.HOME,
@@ -42,14 +48,14 @@ export default function TabRoutes() {
               return (
                 <TabBarIconComp
                   imgSrc={imagePath.ic_messages}
-                  imgColor={color}
+                  imgStyle={{tintColor: color}}
                 />
               );
             else
               return (
                 <TabBarIconComp
                   imgSrc={imagePath.ic_messages}
-                  imgColor={color}
+                  imgStyle={{tintColor: color}}
                 />
               );
           },
